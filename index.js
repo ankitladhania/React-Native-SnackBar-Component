@@ -177,8 +177,7 @@ const styles = StyleSheet.create({
     marginRight: 8
   },
   action_text: {
-    fontFamily: 'Larsseit-Bold',
-    fontWeight: '600'
+    fontFamily: 'Larsseit-Bold'
   }
 });
 
