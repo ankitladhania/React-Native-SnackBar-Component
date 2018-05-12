@@ -63,11 +63,11 @@ class SnackbarComponent extends Component {
               style={styles.image_style}
               source={{ uri: this.props.imageUrl }}
             /> }
-            <Text style={[styles.text_msg, {color: this.props.messageColor}]}>{this.props.textMessage}</Text>
+            <Text style={[styles.text_style, {color: this.props.messageColor}]}>{this.props.textMessage}</Text>
           </View>
           {this.props.actionHandler && this.props.actionText &&
             <Touchable onPress={() => {this.props.actionHandler()}} >
-              <Text style={[styles.action_text, {color: this.props.accentColor}]}>{this.props.actionText.toUpperCase()}</Text>
+              <Text style={[styles.text_style, {fontWeight: '600', color: this.props.accentColor}]}>{this.props.actionText.toUpperCase()}</Text>
             </Touchable>
           }
         </Animated.View>
@@ -164,18 +164,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'flex-start'
   },
-  text_msg: {
-    fontSize: 14,
+  text_style: {
+    fontSize: 15,
+    lineHeight: 20,
+    fontFamily: 'Larsseit-Bold'
   },
   image_style: {
     height: 20,
     width: 20,
     marginRight: 8
   },
-  action_text: {
-    fontSize: 14,
-    fontWeight: '600'
-  }
 });
 
 export default SnackbarComponent;
