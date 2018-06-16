@@ -165,7 +165,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start'
   },
   text_msg: {
-    fontFamily: 'Arimo-Regular'
+    fontFamily: 'Montserrat-Medium'
   },
   text_style: {
     fontSize: 15,
@@ -177,7 +177,7 @@ const styles = StyleSheet.create({
     marginRight: 8
   },
   action_text: {
-    fontFamily: 'Larsseit-Bold'
+    fontFamily: 'OpenSans-Bold'
   }
 });
 
